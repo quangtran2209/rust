@@ -26,5 +26,5 @@ fn second_word(s: &str) -> &str {
 
     let str_array: Vec<&str> = s.split(' ').collect();
 
-    str_array.get(1).unwrap_or(&&s)
+    str_array.get(1).unwrap_or(&s)
 }
